@@ -1,0 +1,158 @@
+body {
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  font: 14px/20px Arial;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header {
+  background: #333;
+  padding: 8px;
+  text-align: center;
+  color: #fff;
+}
+header h1 {
+  font-weight: normal;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer strong {
+  color: #2b8ead;
+}
+
+article {
+  padding: 10px 10px 0;
+}
+
+aside {
+  padding-bottom: 10px;
+  text-align: center;
+}
+.btn {
+  background: #72c3dc;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  margin: 0 5px;
+  border-bottom: 5px solid #2b8ead;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: 14px;
+  width: 120px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #2b8ead;
+}
+.btn:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+#blocks li {
+  padding: 12px 0;
+  text-align: center;
+  border-left: 5px solid transparent;
+  font-size: 1.5em;
+  margin-bottom: 2px;
+  background: #efefef;
+}
+
+#blocks li.block3,
+#blocks li.block5,
+#blocks li.block9 {
+  border-left-color: #2f454e;
+}
+#blocks li.block2,
+#blocks li.block4 {
+  border-left-color: #2b8ead;
+}
+#blocks li.block1,
+#blocks li.block8 {
+  border-left-color: #6f98a8;
+}
+#blocks li.block6,
+#blocks li.block7 {
+  border-left-color: #bfbfbf;
+}
+
+@media screen and (min-width: 568px) {
+  body {
+    background: #efefef;
+  }
+  header {
+    border-bottom: 4px solid #bfbfbf;
+    background: none;
+    color: #000;
+  }
+  article {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0;
+  }
+  aside {
+    max-width: 200px;
+    padding: 30px;
+  }
+  .btn {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+
+  #blocks {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #blocks li {
+    width: calc(100% / 3);
+    color: #fff;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    border: none;
+    margin: 0;
+    font-size: 3em;
+  }
+
+  #blocks li.block3,
+  #blocks li.block5,
+  #blocks li.block9 {
+    background: #2f454e;
+  }
+  #blocks li.block2,
+  #blocks li.block4 {
+    background: #2b8ead;
+  }
+  #blocks li.block1,
+  #blocks li.block8 {
+    background: #6f98a8;
+  }
+  #blocks li.block6,
+  #blocks li.block7 {
+    background: #bfbfbf;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #blocks li {
+    height: 20vh;
+    font-size: 5em;
+  }
+}
